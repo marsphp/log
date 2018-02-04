@@ -1,0 +1,6 @@
+/.idea/
+.vscode
+/tests/
+/composer.lock
+/path/
+/vendor/
