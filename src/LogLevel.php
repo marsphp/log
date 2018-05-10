@@ -7,14 +7,14 @@ namespace Mars\Logging;
  */
 abstract class LogLevel
 {
-    CONST DEBUG = 'debug';
-    CONST INFO = 'info';
-    CONST NOTICE = 'notice';
-    CONST WARNING = 'warning';
-    CONST ERROR = 'error';
-    CONST CRITICAL = 'critical';
-    CONST ALERT = 'alert';
-    CONST EMERGENCY = 'emergency';
+    const DEBUG = 'debug';
+    const INFO = 'info';
+    const NOTICE = 'notice';
+    const WARNING = 'warning';
+    const ERROR = 'error';
+    const CRITICAL = 'critical';
+    const ALERT = 'alert';
+    const EMERGENCY = 'emergency';
 
     abstract protected function writeLog($level, $message, array $context = null);
 }
