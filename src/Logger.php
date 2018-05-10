@@ -40,7 +40,8 @@ class Logger extends LogLevel implements LoggerInterface
      */
     public function __construct($path = null)
     {
-        if ($path !== null) $this->path = $path;
+        if ($path !== null)
+            $this->path = $path;
 
         $this->logger = new MonoLogger($this->name);
     }
@@ -156,7 +157,9 @@ class Logger extends LogLevel implements LoggerInterface
     {
         try {
             $dateFormat = "Y-m-j H:m:s";
-            $output = (!$context) ? "%datetime% - %level_name%: %message%\n" : "%datetime% - %level_name%: %message% %context% %extra%\n";
+            $output = (!$context) ? "%datetime% - %level_name%: %message%\n" :
+                "%datetime% - %level_name%: %message% %context% %extra%\n";
+
             $formatter = new LineFormatter($output, $dateFormat);
             $stream = new StreamHandler(__DIR__ . '/' . $this->path, $level);
             $stream->setFormatter($formatter);
@@ -167,7 +170,6 @@ class Logger extends LogLevel implements LoggerInterface
             }
 
             return false;
-
         } catch (\Exception $e) {
             return $e->getMessage();
         }
