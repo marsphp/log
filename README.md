@@ -4,7 +4,7 @@
 Mars framework Logging
 
 ## Documentation
-Mars Framework - Logging packah=ge [documentation](DOCUMENTATION.md)
+Mars Framework - Logging package [documentation](DOCUMENTATION.md)
 
 ## Contributing
 Mars Logging is an open source, community-driven project.
