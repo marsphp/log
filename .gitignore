@@ -1,6 +1,7 @@
 /.idea/
 .vscode
-/tests/
 /composer.lock
 /path/
 /vendor/
+/phpunit.xml
+/src/path/
