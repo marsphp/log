@@ -1,37 +1,42 @@
 {
-    "name": "martians/log",
-    "description": "The Mars Framework Log package",
-    "require": {
-        "php": ">=7.0",
-        "monolog/monolog": "^2.0@dev"
-    },
+    "name": "mars/logging",
+    "description": "Mars PHP framework logging package",
+    "type": "library",
     "license": "MIT",
-    "support": {
-        "issues": "https://github.com/marsphp/log/issues",
-        "source": "https://github.com/marsphp/log"
-    },
     "authors": [
         {
             "name": "Houssene Dao",
-            "email": "dao.houssene@gmail.com"
+            "email": "dao.houssene@themartiangeeks.com"
         },
         {
             "name": "Hassane Dao",
-            "email": "dao.hassane@gmail.com"
+            "email": "dao.hassane@themartiangeeks.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/marsphp/logging/issues",
+        "source": "https://github.com/marsphp/logging"
+    },
+    "require": {
+        "php": ">=7.0",
+        "monolog/monolog": "^1.23"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1"
+    },
     "autoload": {
         "psr-4": {
-            "Martians\\Log\\": ""
+            "Mars\\Logging\\": "src/"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "dev"
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "test/"
         }
     },
     "config": {
         "sort-packages": true
     },
+    "prefer-stable": true,
     "minimum-stability": "dev"
 }
