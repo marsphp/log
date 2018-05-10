@@ -40,8 +40,9 @@ class Logger extends LogLevel implements LoggerInterface
      */
     public function __construct($path = null)
     {
-        if ($path !== null)
+        if ($path !== null) {
             $this->path = $path;
+        }
 
         $this->logger = new MonoLogger($this->name);
     }
